@@ -1,4 +1,4 @@
-# Generic Form Dynamic Grid
+# Generic Dynamic Form Grid
 This is a study to build a Generic Dynamic Form using CSS Grid and a bit of Flexbox.
 The main objective is to build a reusable component to build Forms with different
 configurations and fields.
