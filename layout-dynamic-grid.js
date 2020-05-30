@@ -3,9 +3,9 @@ in the dynamic placing of grid elements */
 function createElementPositionObject(){
     return {
         prefix: "dgrid-",
-        rowIdentifier: "dgrow-",
-        columnIdentifier: "dgcolumn-",
-        spanIdentifier: "-dgspan-"
+        rowIdentifier: "row-",
+        columnIdentifier: "column-",
+        spanIdentifier: "-span-"
     };
 }
 
@@ -75,6 +75,7 @@ function setRowPosition(element, elementClass){
 
 /* functions to set the Element Column */
 function setGridElementColumn(element, elementClass){
+    const positionObject = createElementPositionObject();
     if(elementClass.includes(positionObject.spanIdentifier)){
         setColumnWithSpan(element, elementClass);
     }else{

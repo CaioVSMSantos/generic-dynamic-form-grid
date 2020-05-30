@@ -21,10 +21,3 @@ Although it places CSS inline in the document, this approach allows a developer 
 form elements will appear and the general layout of the form, without the need to fiddle with CSS.
 It also allows to the elements to be placed in any order in the HTML, but I discourage this since
 it can become harder to read through it.
-
-## Future Upgrades
-
-  * Currently I'm working on a way to create the Form with a Dynamic Number of Columns. Haven't tested 
-  it properly yet
-  * Review and refine CSS Classes. I Intend to leave the Dynamic Grid Component very clean so it can be
-  used with any layout a developer desires
