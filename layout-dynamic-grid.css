@@ -1,0 +1,52 @@
+/*Rules applied to Filter Form*/
+section.dynamic-form{
+    width: 90%;
+    margin: 0 auto;
+    font: bold 12px Verdana, Arial, Helvetica, sans-serif;
+    border: 1px solid rgb(193, 205, 216);
+    border-spacing: 0px;
+    background: rgb(242, 242, 242) none repeat scroll 0% 50%;
+}
+
+section.dgrid-container{
+    display: grid;
+
+    /*grid-template: repeat(1, 1fr) / repeat(1, 1fr);*/
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: column;
+
+    place-items: stretch;
+    place-content: stretch;
+}
+
+/*Rules of the Form Title*/
+section.dgrid-title{
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background: rgb(48, 137, 184) none repeat scroll 0% 50%;
+}
+
+section.dgrid-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+	background: rgb(255, 255, 255) none repeat scroll 0% 50%;
+	border-top: 1px solid rgb(193, 205, 216);
+}
+
+/*Rules for the Grid Elements*/
+section.dgrid-container > div.dgrid-element{
+    place-self: center;
+    margin: 0.5%;
+}
+
+/*Rules applied to the Table Grid Feature*/
+section#tablegrid-section{
+    margin: 50px auto 0;
+    width: 90%;
+}

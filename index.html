@@ -3,23 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="standard.css">
+    <link rel="stylesheet" href="layout-dynamic-grid.css">
     <title>Smart Grid Form</title>
 </head>
 <body>
     <!-- This is the Filter Form -->
-    <section id="layerBusca" class="grid-container">
-        <div class="grid-titulo">
-            Title
+    <section id="layerBusca" class="dynamic-form">
+        <section class="dgrid-title">
+            Title           
+        </section>
+        
+        <section class="dgrid-container">
+            <div class="dgrid-element dgrid-row-1">
+                Content 1
+                <input type="text">
+            </div>
+    
+            <div class="dgrid-element dgrid-row-3">
+                Content 2
+                <input type="text">
+            </div>
+        </section>
+        
+        <section class="dgrid-buttons">
+            <div>
+                botao
+            </div>
+            <div>
+                botao
+            </div>
+        </section>
+
+
+
+
+        <!-- <div class="grid-element column1 placement">
+            Content 3
+            <input type="text">
         </div>
 
-        <div class="grid-element-05">
-            Content
+        <div class="grid-element column1 placement">
+            Content 4
+            <input type="date">
         </div>
 
-        <div class="grid-element-05">
-            Content
+        <div class="grid-element column1">
+            Content 5
+            <input type="date">
         </div>
+
+        <div class="grid-element column2">
+            Content 6
+            <input type="date">
+            to
+            <input type="date">
+        </div>
+
+        <div class="grid-element column2">
+            Content 7
+            <input type="date">
+            to
+            <input type="date">
+        </div>
+
+        <div class="grid-element column2">
+            Content 8
+            <input type="date">
+            to
+            <input type="date">
+        </div>
+
+        <div class="grid-element column2">
+            Content 9
+            <input type="date">
+            to
+            <input type="date">
+        </div> -->
+
+        <!-- <div class="grid-element-big">
+            Content
+            <textarea name="ta" id="" cols="30" rows="10"></textarea>
+        </div> -->
+
+         <!-- <div class="grid-element-big">
+            Content
+            <fieldset>
+                <legend>Field</legend>
+                <div>
+                    FieldSet Content
+                </div>
+                <div>
+                    FieldSet Content
+                </div>
+            </fieldset>
+        </div> -->
     </section>
 
     <!-- This is the section that wraps the Table Grid feature -->
@@ -28,5 +105,6 @@
         <section>Buttons/Subtitles Row - Must build component using flexbox</section>
         <section>Tablegrid - Use the Ready component</section>
     </section>
+    <script src="layout-dynamic-grid.js"></script>
 </body>
 </html>
