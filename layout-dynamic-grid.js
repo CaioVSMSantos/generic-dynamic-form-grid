@@ -3,9 +3,9 @@ in the dynamic placing of grid elements */
 function createElementPositionObject(){
     return {
         prefix: "dgrid-",
-        rowIdentifier: "row-",
-        columnIdentifier: "column-",
-        spanIdentifier: "-span-"
+        rowIdentifier: "dgrow-",
+        columnIdentifier: "dgcolumn-",
+        spanIdentifier: "-dgspan-"
     };
 }
 
