@@ -3,110 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="layout-dynamic-grid.css">
-    <title>Smart Grid Form</title>
+    <link rel="stylesheet" href="generic-dynamic-form-grid.css">
+    <link rel="stylesheet" href="standard.css">
+    <title>Generic Dynamic Form Grid</title>
 </head>
 <body>
     <!-- This is the Filter Form -->
-    <section id="layerBusca" class="dynamic-form">
+    <section id="layerBusca" class="generic-form-box">
         <section class="dgrid-title">
-            Title           
+            Awesome Dynamic Form Title           
         </section>
-        
-        <section class="dgrid-container">
-            <div class="dgrid-element dgrid-row-1">
-                Content 1
-                <input type="text">
-            </div>
     
-            <div class="dgrid-element dgrid-row-2">
-                Content 2
-                <input type="text">
+        <section class="dynamic-grid-container">
+
+            <label class="row-1 column-1 justify-right" for="name">Name:</label>
+            <input class="row-1 column-2 justify-left" id="name" type="text">
+
+            <label class="row-2 column-1 justify-right" for="content">Email: </label>
+            <input class="row-2 column-2 justify-left" id="content" type="email">
+
+            <label class="row-3 column-1 justify-right" for="cpf">Cpf: </label>
+            <input class="row-3 column-2 justify-left" id="cpf" type="text">
+
+            <label class="row-4 column-1 justify-right" for="dateFrom">Birth Date: </label>
+            <div class="row-4 column-2 justify-left flex-element">
+                <input id="dateFrom" type="date">
+                <label class="margin-1" for="dateTo">to</label>
+                <input  type="date">
             </div>
 
-            <div class="dgrid-element dgrid-row-3">
-                Content 3
-                <input type="text">
-            </div>
+            <label class="row-1 column-3 justify-left block" for="description">Description: </label>
+            <textarea class="row-2-span-4 column-3 justify-left"
+                id="description" cols="30" rows="6"></textarea>
 
-            <div class="dgrid-element dgrid-row-1-span-3 dgrid-column-2">
-                Content
-                <textarea name="ta" id="" cols="30" rows="10"></textarea>
-            </div>
         </section>
-        
+
         <section class="dgrid-buttons">
-            <div>
-                botao
-            </div>
-            <div>
-                botao
-            </div>
+            <button>Submit</button>
+            <button>Cancel</button>
         </section>
-
-
-
-
-        <!-- <div class="grid-element column1 placement">
-            Content 3
-            <input type="text">
-        </div>
-
-        <div class="grid-element column1 placement">
-            Content 4
-            <input type="date">
-        </div>
-
-        <div class="grid-element column1">
-            Content 5
-            <input type="date">
-        </div>
-
-        <div class="grid-element column2">
-            Content 6
-            <input type="date">
-            to
-            <input type="date">
-        </div>
-
-        <div class="grid-element column2">
-            Content 7
-            <input type="date">
-            to
-            <input type="date">
-        </div>
-
-        <div class="grid-element column2">
-            Content 8
-            <input type="date">
-            to
-            <input type="date">
-        </div>
-
-        <div class="grid-element column2">
-            Content 9
-            <input type="date">
-            to
-            <input type="date">
-        </div> -->
-
-        <!-- <div class="grid-element-big">
-            Content
-            <textarea name="ta" id="" cols="30" rows="10"></textarea>
-        </div> -->
-
-         <!-- <div class="grid-element-big">
-            Content
-            <fieldset>
-                <legend>Field</legend>
-                <div>
-                    FieldSet Content
-                </div>
-                <div>
-                    FieldSet Content
-                </div>
-            </fieldset>
-        </div> -->
     </section>
 
     <!-- This is the section that wraps the Table Grid feature -->
@@ -115,6 +50,7 @@
         <section>Buttons/Subtitles Row - Must build component using flexbox</section>
         <section>Tablegrid - Use the Ready component</section>
     </section>
-    <script src="layout-dynamic-grid.js"></script>
+
+    <script src="generic-dynamic-form-grid.js"></script>
 </body>
 </html>
