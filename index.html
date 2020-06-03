@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="generic-dynamic-form-grid.css">
-    <link rel="stylesheet" href="standard.css">
-    <title>Generic Dynamic Form Grid</title>
+    <link rel="stylesheet" href="dynamic-layout.css">
+    <title>Generic Dynamic Form Grid - Prototype</title>
 </head>
 <body>
     <!-- This is the Filter Form -->
     <section id="layerBusca" class="generic-form-box">
-        <section class="dgrid-title">
+        <section class="generic-form-title">
             Awesome Dynamic Form Title           
         </section>
     
         <section class="dynamic-grid-container">
-
             <label class="row-1 column-1 justify-right" for="name">Name:</label>
             <input class="row-1 column-2 justify-left" id="name" type="text">
 
@@ -35,20 +34,34 @@
             <label class="row-1 column-3 justify-left block" for="description">Description: </label>
             <textarea class="row-2-span-4 column-3 justify-left"
                 id="description" cols="30" rows="6"></textarea>
-
         </section>
 
-        <section class="dgrid-buttons">
+        <section class="generic-form-buttons">
             <button>Submit</button>
             <button>Cancel</button>
         </section>
     </section>
 
     <!-- This is the section that wraps the Table Grid feature -->
-    <section id="tablegrid-section">
-        <section>Register Counter - Must build component probably using flexbox</section>
-        <section>Buttons/Subtitles Row - Must build component using flexbox</section>
-        <section>Tablegrid - Use the Ready component</section>
+    <section class="tablegrid-section">
+        <section class="register-counter">
+            Number of Registers: 42
+        </section>
+        <section class="buttons-subtitles">
+            <div class="buttons">
+                <button>Button 1</button>
+                <button>Button 2</button>
+                <button>Button 3</button>
+                <button>Button 4</button>
+            </div>
+            <div class="subtitles">
+                <img src="images/alarm.svg" alt="Alarm"> = This is an Alarm
+                <img src="images/speaker.svg" alt="Speaker"> = This is a Speaker
+                <img src="images/toggles.svg" alt="Toggles"> = These are Toggles
+                <img src="images/watch.svg" alt="Watch"> = This is a Watch
+            </div>
+        </section>
+        Here comes the Tablegrid Component
     </section>
 
     <script src="generic-dynamic-form-grid.js"></script>

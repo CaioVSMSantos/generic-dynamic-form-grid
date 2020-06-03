@@ -1,0 +1,68 @@
+section.generic-form-box{
+    width: 90%;
+    margin: 0 auto;
+    font: bold 12px Verdana, Arial, Helvetica, sans-serif;
+    border: 1px solid rgb(193, 205, 216);
+    border-spacing: 0px;
+    background: rgb(242, 242, 242) none repeat scroll 0% 50%;
+}
+
+/*Rules for the Form Title*/
+section.generic-form-box > section.generic-form-title{
+    display: flex;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background: rgb(48, 137, 184) none repeat scroll 0% 50%;
+}
+
+/* Rules for the Form Buttons */
+section.generic-form-box > section.generic-form-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+	background: rgb(255, 255, 255) none repeat scroll 0% 50%;
+	border-top: 1px solid rgb(193, 205, 216);
+}
+
+section.generic-form-buttons > * {
+    margin: 0 0.5%;
+}
+
+/*Rules applied to the Table Grid Feature*/
+section.tablegrid-section{
+    width: 90%;
+    margin: 0 auto;
+}
+
+section.tablegrid-section > section.register-counter{
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+section.tablegrid-section > section.buttons-subtitles{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+section.buttons-subtitles > div.buttons{
+    display: flex;
+}
+
+div.buttons > * {
+    margin-right: 5px;
+}
+
+section.buttons-subtitles > div.subtitles{
+    display: flex;
+}
+
+div.subtitles > * {
+    margin-left: 5px;
+}
