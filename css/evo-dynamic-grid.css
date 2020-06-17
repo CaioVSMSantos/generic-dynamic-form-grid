@@ -1,0 +1,46 @@
+/* Main Rule, the container for the Dynamic Grid */
+.evo-dynamic-grid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    place-items: center;
+    place-content: center;
+}
+
+.evo-dynamic-grid > * {
+    margin: 1%;
+}
+
+/* Support Rules - Can be applied to grid elements
+in order to get a specific behavior or fine tuning */
+.evo-dynamic-grid > .justify-start {
+    justify-self: start;
+}
+
+.evo-dynamic-grid > .justify-end {
+    justify-self: end;
+}
+
+.evo-dynamic-grid > .justify-center {
+    justify-self: center;
+}
+
+.evo-dynamic-grid > .align-start {
+    align-self: start;
+}
+
+.evo-dynamic-grid > .align-end {
+    align-self: end;
+}
+
+.evo-dynamic-grid > .align-center {
+    align-self: center;
+}
+
+.evo-dynamic-grid > .flex-element {
+    display: flex;
+}
+
+.flex-element > * {
+    margin: 0 1%;
+}

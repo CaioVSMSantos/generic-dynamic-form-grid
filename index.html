@@ -3,51 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="generic-dynamic-form-grid.css">
-    <link rel="stylesheet" href="dynamic-layout.css">
+    <link rel="stylesheet" href="css/evo-dynamic-grid.css">
+    <link rel="stylesheet" href="css/evo-standard-form.css">
+    <link rel="stylesheet" href="css/evo-standard-tablegrid.css">
     <title>Generic Dynamic Form Grid - Prototype</title>
 </head>
 <body>
-    <!-- This is the Filter Form -->
-    <section id="layerBusca" class="generic-form-box">
-        <section class="generic-form-title">
-            Awesome Dynamic Form Title           
+    <section id="prototype1" class="evo-standard-form">
+        <section class="title">
+            Generic Dynamic Form Grid - Prototype 1
         </section>
-    
-        <section class="dynamic-grid-container">
-            <label class="row-1 column-1 justify-right" for="name">Name:</label>
-            <input class="row-1 column-2 justify-left" id="name" type="text">
+        <section class="evo-dynamic-grid width-60per horizontal-center">
+            <label class="row-1 column-1 justify-end" for="p1-name">Name:</label>
+            <input class="row-1 column-2 justify-start" type="text" name="p1-name" id="p1-name">
 
-            <label class="row-2 column-1 justify-right" for="content">Email: </label>
-            <input class="row-2 column-2 justify-left" id="content" type="email">
+            <label class="row-2 column-1 justify-end" for="p1-email">Email:</label>
+            <input class="row-2 column-2 justify-start" type="email" name="p1-email" id="p1-email">
 
-            <label class="row-3 column-1 justify-right" for="cpf">Cpf: </label>
-            <input class="row-3 column-2 justify-left" id="cpf" type="text">
+            <label class="row-3 column-1 justify-end" for="p1-id">Id Num:</label>
+            <input class="row-3 column-2 justify-start" type="text" name="p1-id" id="p1-id">
 
-            <label class="row-4 column-1 justify-right" for="dateFrom">Birth Date: </label>
-            <div class="row-4 column-2 justify-left flex-element">
-                <input id="dateFrom" type="date">
-                <label class="margin-1" for="dateTo">to</label>
-                <input  type="date">
+
+            <label class="row-1 column-2 justify-end" for="p1-surname">Surname:</label>
+            <input class="row-1 column-3 justify-start" type="text" name="p1-surname" id="p1-surname">
+
+            <label class="row-2 column-2 justify-end" for="p1-tel">Tel:</label>
+            <input class="row-2 column-3 justify-start" type="tel" name="p1-tel" id="p1-tel">
+            
+            <label class="row-3 column-2 justify-end" for="p1-birthdate">Birthdate:</label>
+            <input class="row-3 column-3 justify-start" type="date" name="p1-birthdate" id="p1-birthdate">
+        </section>
+        <section class="form-buttons">
+            <button>Submit</button>
+            <button>Cancel</button>
+        </section>
+    </section>
+
+    <br>
+    <br>
+
+    <section id="prototype2" class="evo-standard-form">
+        <section class="title">
+            Generic Dynamic Form Grid - Prototype 2
+        </section>
+        <section class="evo-dynamic-grid width-60per horizontal-center">
+            <label class="row-1 column-1 justify-end" for="p2-filename">File Name:</label>
+            <input class="row-1 column-2 justify-start" type="text" name="p2-filename" id="p2-filename">
+            
+            <label class="row-1 column-3 justify-end" for="p2-filetype">File Type:</label>
+            <select class="row-1 column-4 justify-start" name="p2-filetype" id="p2-filetype">
+                <option value="PDF">PDF</option>
+                <option value="CSV">CSV</option>
+                <option value="DOCX">DOCX</option>
+                <option value="TXT">TXT</option>
+            </select>
+
+            <label class="row-1 column-5 justify-end" for="p2-file">File:</label>
+            <input class="row-1 column-6 justify-start" type="file" name="p2-file" id="p1-file">
+        </section>
+        <section class="form-buttons">
+            <button>Submit</button>
+            <button>Cancel</button>
+        </section>
+    </section>
+
+    <br>
+    <br>
+
+    <section id="prototype3" class="evo-standard-form">
+        <section class="title">
+            Generic Dynamic Form Grid - Prototype 3
+        </section>
+        <section class="evo-dynamic-grid width-70per horizontal-center">
+            <label class="row-1 column-1 justify-end" for="p3-name">Name:</label>
+            <input class="row-1 column-2 justify-start" name="p3-name" id="p3-name" type="text">
+
+            <label class="row-2 column-1 justify-end" for="p3-email">Email: </label>
+            <input class="row-2 column-2 justify-start" name="p3-id" id="p3-email" type="text">
+
+            <label class="row-3 column-1 justify-end" for="p3-id">Id: </label>
+            <input class="row-3 column-2 justify-start" name="p3-id" id="p3-id" type="text">
+
+            <label class="row-4 column-1 justify-end" for="p3-activeperiod-from">Active Period: </label>
+            <div class="row-4 column-2 justify-start flex-element">
+                <input name="p3-activeperiod-from" id="p3-activeperiod-from" type="date">
+                <label class="margin-1" for="p3-activeperiod-to">to</label>
+                <input name="p3-activeperiod-to" id="p3-activeperiod-to"  type="date">
             </div>
 
-            <label class="row-1 column-3 justify-left block" for="description">Description: </label>
-            <textarea class="row-2-span-4 column-3 justify-left"
-                id="description" cols="30" rows="6"></textarea>
+            <label class="row-5 column-1 justify-end" for="p3-color">Color:</label>
+            <input class="row-5 column-2 justify-start" type="color" name="p3-color" id="p3-color">
+
+            <label class="row-1 column-3 justify-start" for="p3-description">Description: </label>
+            <textarea class="row-2-span-4 column-3 justify-start"
+                id="p3-description" cols="30" rows="6"></textarea>
+        </section>
+        <section class="form-buttons">
+            <button>Submit</button>
+            <button>Cancel</button>
+        </section>
+    </section>
+
+    <br>
+    <br>
+
+    <section id="prototype4" class="evo-standard-form">
+        <section class="title">
+            Generic Dynamic Form Grid - Prototype 4
+        </section>
+        <section class="evo-dynamic-grid width-60per horizontal-center">
+            <label class="row-1 column-1 justify-start" for="p4-dog">Animal:</label>
+            <div class="row-2 column-1 justify-start">
+                <label for="p4-dog">Dog</label>
+                <input type="radio" id="p4-dog" name="p4-animal" value="dog">
+                
+                <label for="p4-bird">Bird</label>
+                <input type="radio" id="p4-bird" name="p4-animal" value="bird">
+                
+                <label for="p4-lizard">Lizard</label> 
+                <input type="radio" id="p4-lizard" name="p4-animal" value="lizard">
+            </div>
+            
+            <div class="row-3 column-1">
+                <label for="p4-rare"> Rare Species</label>
+                <input type="checkbox" id="p4-rare" name="p4-rare" value="Bike">
+                
+                <label for="p4-special"> Needs Special Treatment</label>
+                <input type="checkbox" id="p4-special" name="p4-special" value="Car">
+                
+                <label for="p4-medical"> Needs Medical Attention</label>
+                <input type="checkbox" id="p4-medical" name="p4-medical" value="Boat">
+            </div>
+            
+            <label class="row-4 column-1 justify-start" for="p4-description">Description: </label>
+            <textarea class="row-5-span-4 column-1 justify-start"
+                id="p4-description" cols="30" rows="6"></textarea>
+
+            <label class="row-4 column-1 justify-end" for="p4-name">Name:</label>
+            <input class="row-4 column-2 justify-start" name="p4-name" id="p4-name" type="text">
+
+            <label class="row-5 column-1 justify-end" for="p4-breed">Breed: </label>
+            <input class="row-5 column-2 justify-start" name="p4-breed" id="p4-breed" type="text">
+
+            <label class="row-6 column-1 justify-end" for="p4-weight">Weight(Kg): </label>
+            <input class="row-6 column-2 justify-start" name="p4-weight" id="p4-weight" type="number">
+
+            <label class="row-7 column-1 justify-end" for="p4-age">Age: </label>
+            <input class="row-7 column-2 justify-start" name="p4-age" id="p4-age" type="number">
+        </section>
+        <section class="form-buttons">
+            <button>Submit</button>
+            <button>Cancel</button>
+        </section>
+    </section>
+
+    <br>
+    <br>
+
+    <section id="prototype5" class="evo-standard-form">
+        <section class="title">
+            Generic Dynamic Form Grid - Prototype 5
         </section>
 
-        <section class="generic-form-buttons">
+        <section class="evo-dynamic-grid width-60per horizontal-center">
+            <label class="row-1 column-1 justify-start" for="p5-land">Type of Vehicle:</label>
+            <div class="row-2 column-1 justify-start">
+                <label for="p5-land">Land</label>
+                <input type="radio" id="p5-land" name="p5-vehicle" value="land">
+                
+                <label for="p5-air">Air</label>
+                <input type="radio" id="p5-air" name="p5-vehicle" value="air">
+                
+                <label for="p5-Sea">Sea</label> 
+                <input type="radio" id="p5-sea" name="p5-vehicle" value="sea">
+            </div>
+        </section>
+
+        <section class="evo-dynamic-grid width-60per horizontal-center">
+            <label class="row-1 column-1 justify-start" for="p5-mainvalue">Main Value:</label>
+            <input class="row-1 column-2 justify-start" type="text" name="p5-mainvalue" id="p5-mainvalue">
+        
+            <fieldset class="row-2-span-3 column-1-span-4 evo-dynamic-grid fill-container">
+                <legend>Original Values</legend>
+
+                <label class="row-1 column-1 justify-start" for="p5-original-power">Power:</label>
+                <input class="row-1 column-2 justify-end" type="number" min="20" max="100" step="5" name="p5-original-power" id="p5-original-power">
+
+                <label class="row-3 column-1 justify-start" for="p5-original-value">Value:</label>
+                <input class="row-3 column-2 justify-end" type="number" min="0.00" max="1000000.00" step="0.01" name="p5-original-value" id="p5-original-value">
+
+                <label class="row-4 column-1 justify-start" for="p5-original-energyinput">Energy Input:</label>
+                <input class="row-4 column-2 justify-end" type="number" min="100" max="10000" step="100" name="p5-original-energyinput" id="p5-original-energyinput">
+            </fieldset>
+
+            <fieldset class="row-2-span-3 column-5-span-4 evo-dynamic-grid fill-container">
+                <legend>Fixed Values</legend>
+
+                <label class="row-1 column-1 justify-start" for="p5-fixed-power">Power:</label>
+                <input class="row-1 column-2 justify-end" type="number" min="20" max="100" step="5" name="p5-fixed-power" id="p5-fixed-power">
+
+                <label class="row-2 column-1 justify-start" for="p5-fixed-divertedpower">Diverted Power:</label>
+                <input class="row-2 column-2 justify-end" type="number" min="20" max="100" step="5" name="p5-fixed-divertedpower" id="p5-fixed-divertedpower">
+
+                <label class="row-3 column-1 justify-start" for="p5-fixed-value">Value:</label>
+                <input class="row-3 column-2 justify-end" type="number" min="0.00" max="1000000.00" step="0.01" name="p5-fixed-value" id="p5-fixed-value">
+
+                <label class="row-4 column-1 justify-start" for="p5-fixed-energyinput">Energy Input:</label>
+                <input class="row-4 column-2 justify-end" type="number" min="100" max="10000" step="100" name="p5-fixed-energyinput" id="p5-fixed-energyinput">
+            </fieldset>
+
+            <label class="row-5 column-7 justify-start" for="p5-finalvalue">Final Value:</label>
+            <input class="row-5 column-8 justify-end" type="text" name="p5-finalvalue" id="p5-finalvalue">
+        </section>
+        <section class="form-buttons">
             <button>Submit</button>
             <button>Cancel</button>
         </section>
     </section>
 
     <!-- This is the section that wraps the Table Grid feature -->
-    <section class="tablegrid-section">
-        <section class="register-counter">
+    <section class="evo-standard-tablegrid-components">
+        <section class="register-counter-row">
             Number of Registers: 42
         </section>
-        <section class="buttons-subtitles">
+        <section class="buttons-subtitles-row">
             <div class="buttons">
                 <button>Button 1</button>
                 <button>Button 2</button>
@@ -61,9 +240,50 @@
                 <img src="images/watch.svg" alt="Watch"> = This is a Watch
             </div>
         </section>
-        Here comes the Tablegrid Component
+        <br>
+        <section>
+            <table class="fill-container">
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Final Value</th>
+                </tr>
+                <tr>
+                    <td>0010</td>
+                    <td>John Doe</td>
+                    <td>Active</td>
+                    <td>10.000</td>
+                </tr>
+                <tr>
+                    <td>0202</td>
+                    <td>Mika Constantine</td>
+                    <td>Active</td>
+                    <td>20.000</td>
+                </tr>
+                <tr>
+                    <td>3300</td>
+                    <td>Tito Carlone</td>
+                    <td>Suspended</td>
+                    <td>15.000</td>
+                </tr>
+                <tr>
+                    <td>4040</td>
+                    <td>Santino Rigoleto</td>
+                    <td>Inactive</td>
+                    <td>50.000</td>
+                </tr>
+                <tr>
+                    <td>5555</td>
+                    <td>Ming Poe</td>
+                    <td>Suspended</td>
+                    <td>35.000</td>
+                </tr>
+            </table>
+        </section>
     </section>
-
-    <script src="generic-dynamic-form-grid.js"></script>
+    <br>
+    <br>
+    <script src="js/evo-dynamic-grid.js"></script>
 </body>
 </html>

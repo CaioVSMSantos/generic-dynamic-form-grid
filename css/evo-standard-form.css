@@ -1,0 +1,76 @@
+/* Container for the Standard Form */
+section.evo-standard-form {
+    width: 90%;
+    margin: 0 auto;
+    font: bold 12px Verdana, Arial, Helvetica, sans-serif;
+    border: 1px solid rgb(193, 205, 216);
+    border-spacing: 0px;
+    background: rgb(242, 242, 242) none repeat scroll 0% 50%;
+}
+
+section.evo-standard-form > section.title {
+    display: flex;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background: rgb(48, 137, 184) none repeat scroll 0% 50%;
+}
+
+/* Rules for the Form Buttons */
+section.evo-standard-form > section.form-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+	background: rgb(255, 255, 255) none repeat scroll 0% 50%;
+	border-top: 1px solid rgb(193, 205, 216);
+}
+
+section.form-buttons > * {
+    margin: 0 0.5%;
+}
+
+/* Support Rules - Can be applied to elements
+in order to get a specific behavior */
+.fill-container {
+    width: 99%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.horizontal-center {
+    margin: 0 auto;
+}
+
+.width-150 {
+    width: 150px;
+}
+
+.width-200 {
+    width: 200px;
+}
+
+.width-250 {
+    width: 250px;
+}
+
+.width-300 {
+    width: 300px;
+}
+
+.width-80per {
+    width: 80%;
+}
+
+.width-70per {
+    width: 70%;
+}
+
+.width-60per {
+    width: 60%;
+}
+
+.width-50per {
+    width: 50%;
+}

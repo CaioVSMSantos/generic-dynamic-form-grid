@@ -1,5 +1,6 @@
 const DYNAMIC_GRID_CONSTANTS = {
-    dynamicStyleID: "dynamicGridElements",
+    containerSelector: ".evo-dynamic-grid",
+    dynamicStyleID: "evo-dynamic-grid-style",
     rowIdentifier: "row-",
     columnIdentifier: "column-",
     spanIdentifier: "-span-"
@@ -12,20 +13,12 @@ function initializeDynamicGridConstants(){
 function initializeDynamicStyle(dynamicStyleID){
     const dynamicStyle = document.createElement("style");
     dynamicStyle.type = "text/css";
-    dynamicStyle.id = dynamicStyleID;
+    dynamicStyle.id = DYNAMIC_GRID_CONSTANTS.dynamicStyleID;
     document.head.appendChild(dynamicStyle);
 }
 
-function getDynamicStyle(){
-    for(let currentStyle of document.styleSheets){
-        if(currentStyle.ownerNode.id === DYNAMIC_GRID_CONSTANTS.dynamicStyleID){
-            return currentStyle
-        }
-    }
-}
-
 function setDynamicElementsPosition(){
-    const dynamicElements = document.querySelectorAll("section.dynamic-grid-container > *");
+    const dynamicElements = document.querySelectorAll(DYNAMIC_GRID_CONSTANTS.containerSelector + " > *");
     for(let dynamicElement of dynamicElements){
         setElementPosition(dynamicElement);
     }
@@ -44,7 +37,7 @@ function setElementPosition(dynamicElement){
 function setRow(elementClass){
     if(Boolean(isClassNonExistent(elementClass))){
         getDynamicStyle().insertRule(
-            "section.dynamic-grid-container > ." + elementClass + 
+            DYNAMIC_GRID_CONSTANTS.containerSelector + " > ." + elementClass + 
             "{grid-row: " + getGridRowValue(elementClass), 0);
     }
 }
@@ -52,7 +45,7 @@ function setRow(elementClass){
 function setColumn(elementClass){
     if(Boolean(isClassNonExistent(elementClass))){
         getDynamicStyle().insertRule(
-            "section.dynamic-grid-container > ." + elementClass + 
+            DYNAMIC_GRID_CONSTANTS.containerSelector + " > ." + elementClass + 
             "{grid-column: " + getGridColumnValue(elementClass), 0);
     }
 }
@@ -92,9 +85,17 @@ function appendSpan(elementClass){
         DYNAMIC_GRID_CONSTANTS.spanIdentifier) + DYNAMIC_GRID_CONSTANTS.spanIdentifier.length);
 }
 
+function getDynamicStyle(){
+    for(let currentStyle of document.styleSheets){
+        if(currentStyle.ownerNode.id === DYNAMIC_GRID_CONSTANTS.dynamicStyleID){
+            return currentStyle
+        }
+    }
+}
+
 function isClassNonExistent(elementClass){
     for(let rule of getDynamicStyle().rules){
-        if(rule.selectorText.startsWith("section.dynamic-grid-container > ." + elementClass)){
+        if(rule.selectorText.startsWith(DYNAMIC_GRID_CONSTANTS.containerSelector + " > ." + elementClass)){
             return false;
         }
     }
@@ -115,6 +116,6 @@ function containsSpanClass(elementClass){
 
 window.onload = function(){
     this.initializeDynamicGridConstants();
-    this.initializeDynamicStyle(DYNAMIC_GRID_CONSTANTS.dynamicStyleID);
+    this.initializeDynamicStyle();
     this.setDynamicElementsPosition();
 }
