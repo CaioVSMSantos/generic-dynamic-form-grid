@@ -1,7 +1,7 @@
 <h1>Generic Dynamic Form Grid</h1>
 
 <h3 align="center">
-  <a href="readme-ptBR.md">PT-BR</a>
+  <a href="README-ptBR.md">PT-BR</a>
 </h3>
 
 [![Latest Version](https://badgen.net/github/release/CaioVictorMota/generic-dynamic-form-grid/)](https://github.com/CaioVictorMota/generic-dynamic-form-grid/releases)
