@@ -1,10 +1,12 @@
 <h1>Generic Dynamic Form Grid</h1>
 
 <h3 align="center">
-  <a href="README-ptBR.md">PT-BR</a>
+    <a href="README.md">English-US</a>
+    <span>|</span>
+    <a href="README-ptBR.md">Português-BR</a>
 </h3>
 
-[![Latest Version](https://badgen.net/github/release/CaioVictorMota/generic-dynamic-form-grid/)](https://github.com/CaioVictorMota/generic-dynamic-form-grid/releases)
+[![Latest Version](https://badgen.net/github/releases/CaioVictorMota/generic-dynamic-form-grid/)](https://github.com/CaioVictorMota/generic-dynamic-form-grid/releases)
 [![License: MIT](https://badgen.now.sh/badge/license/MIT/green)](https://opensource.org/licenses/MIT)
 
 
@@ -21,6 +23,69 @@ Hopefully this will be a evolving component, maintaining the main objective. Any
 
 <h2>How to Use</h2>
 
+<strong>1 - Download the Latest Release of the Component</strong>
+<p>There is only two files in the Latest Release, a CSS and a JS. Both must be included in the page to be used. A strong recomendation is to include the JS file in the bottom of the page.</p>
+<p>Example:</p>
+
+```
+<link rel="stylesheet" href="css/evo-dynamic-grid.min.css">
+.
+.
+<script src="js/evo-dynamic-grid.min.js"></script>
+```
+
+<strong>2 - Create a Container for the Dynamic Grid</strong>
+<p>Apply the CSS Class <em>"evo-dynamic-grid"</em> to the element to be transformed into a container.</p>
+<p>Example:</p>
+
+```
+<section class="evo-dynamic-grid">
+```
+
+<strong>3 - Add Tag Elements inside the Container with Positioning Classes</strong>
+<p>Now it is possible to add other Tag Elements in the container using the <em>row-N</em> and <em>column-N</em> Classes. As the name implies they are used to specify the Row and Column of the CSS Grid Dynamically. The Latest Row of the Grid will be the higher Row Number specified by an Element. The same thing applies to Column.
+</p>
+<p>Example:</p>
+
+```
+<!-- Specifies an Input Tag in the First Row and Second Column of the Grid -->
+<input class="row-1 column-2" type="text" name="text" id="text">
+
+<!-- Specifies a Label Tag in the Third Row and Fourth Column of the Grid -->
+<label class="row-3 column-4" for="myElement">Label</label>
+```
+
+<p>It is also possible to append <em>-span-N</em> to the Row and Column Classes in order to make an element occupy a larger region.</p>
+<p>Example:</p>
+
+```
+<!-- Specifies an Input Tag beginning in the Second Row Spanning up to the Fourth Row (Span 3) and First Column of the Grid -->
+<input class="row-2-span-3 column-1" type="text" name="text2" id="text2">
+
+<!-- Specifies a Label Tag in the First Row and beginning in the First Column Spanning up to the Second Column (Span 2) of the Grid -->
+<label class="row-1 column-1-span-2" for="myElement2">Label</label>
+```
+
+<strong>4 - Add Support Classes to Adjust Positioning</strong>
+<p>A few Support Classes are also available to be used in order to Justify/Align Elements inside the Grid Cells. These are as follows:</P>
+<ul>
+    <li>justify-start
+    <li>justify-end
+    <li>justify-center
+    <li>align-start
+    <li>align-end
+    <li>align-center
+</ul>
+<p>Justify and Align can be used at the same time and adjust the Tag Element as theyr name implies</p>
+<p>Example:</p>
+
+```
+<!-- Specifies an Input Tag in the First Row and First Column of the Grid Justified on the Start of the Cell (Usually left side)-->
+<input class="row-1 column-1 justify-start" type="text" name="text2" id="text2">
+
+<!-- Specifies a Label Tag in the Second Row and First Column of the Grid Aligned in the end of the cell (Usually the bottom)-->
+<label class="row-2 column-1 align-end" for="myElement2">Label</label>
+```
 
 <h2>Credits</h2>
 
