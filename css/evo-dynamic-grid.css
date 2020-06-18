@@ -36,11 +36,3 @@ in order to get a specific behavior or fine tuning */
 .evo-dynamic-grid > .align-center {
     align-self: center;
 }
-
-.evo-dynamic-grid > .flex-element {
-    display: flex;
-}
-
-.flex-element > * {
-    margin: 0 1%;
-}

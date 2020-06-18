@@ -18,7 +18,8 @@ function initializeDynamicStyle(dynamicStyleID){
 }
 
 function setDynamicElementsPosition(){
-    const dynamicElements = document.querySelectorAll(DYNAMIC_GRID_CONSTANTS.containerSelector + " > *");
+    const dynamicElements = document.querySelectorAll(
+        DYNAMIC_GRID_CONSTANTS.containerSelector + " > *");
     for(let dynamicElement of dynamicElements){
         setElementPosition(dynamicElement);
     }
@@ -56,11 +57,13 @@ function getGridRowValue(elementClass){
     if(containsSpanClass(elementClass)){
         span = appendSpan(elementClass);
         rowPosition = elementClass.substring(
-            elementClass.indexOf(DYNAMIC_GRID_CONSTANTS.rowIdentifier) + DYNAMIC_GRID_CONSTANTS.rowIdentifier.length, 
+            elementClass.indexOf(DYNAMIC_GRID_CONSTANTS.rowIdentifier) +
+                DYNAMIC_GRID_CONSTANTS.rowIdentifier.length, 
             elementClass.indexOf(DYNAMIC_GRID_CONSTANTS.spanIdentifier));
     }else{
         rowPosition = elementClass.substring(
-            elementClass.indexOf(DYNAMIC_GRID_CONSTANTS.rowIdentifier) + DYNAMIC_GRID_CONSTANTS.rowIdentifier.length);
+            elementClass.indexOf(DYNAMIC_GRID_CONSTANTS.rowIdentifier) +
+                DYNAMIC_GRID_CONSTANTS.rowIdentifier.length);
     }
     return rowPosition + span;
 }
@@ -71,18 +74,21 @@ function getGridColumnValue(elementClass){
     if(containsSpanClass(elementClass)){
         span = appendSpan(elementClass);
         columnPosition = elementClass.substring(
-            elementClass.indexOf(DYNAMIC_GRID_CONSTANTS.columnIdentifier) + DYNAMIC_GRID_CONSTANTS.columnIdentifier.length, 
+            elementClass.indexOf(DYNAMIC_GRID_CONSTANTS.columnIdentifier) +
+                DYNAMIC_GRID_CONSTANTS.columnIdentifier.length, 
             elementClass.indexOf(DYNAMIC_GRID_CONSTANTS.spanIdentifier));
     }else{
         columnPosition = elementClass.substring(
-            elementClass.indexOf(DYNAMIC_GRID_CONSTANTS.columnIdentifier) + DYNAMIC_GRID_CONSTANTS.columnIdentifier.length);
+            elementClass.indexOf(DYNAMIC_GRID_CONSTANTS.columnIdentifier) +
+                DYNAMIC_GRID_CONSTANTS.columnIdentifier.length);
     }
     return columnPosition + span;
 }
 
 function appendSpan(elementClass){
     return " / span " + elementClass.substring(elementClass.indexOf(
-        DYNAMIC_GRID_CONSTANTS.spanIdentifier) + DYNAMIC_GRID_CONSTANTS.spanIdentifier.length);
+        DYNAMIC_GRID_CONSTANTS.spanIdentifier) + 
+            DYNAMIC_GRID_CONSTANTS.spanIdentifier.length);
 }
 
 function getDynamicStyle(){
@@ -95,7 +101,8 @@ function getDynamicStyle(){
 
 function isClassNonExistent(elementClass){
     for(let rule of getDynamicStyle().rules){
-        if(rule.selectorText.startsWith(DYNAMIC_GRID_CONSTANTS.containerSelector + " > ." + elementClass)){
+        if(rule.selectorText.startsWith(
+            DYNAMIC_GRID_CONSTANTS.containerSelector + " > ." + elementClass)){
             return false;
         }
     }

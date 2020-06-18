@@ -1,23 +1,29 @@
-# Generic Dynamic Form Grid
-This is a study to build a Generic Dynamic Form using CSS Grid and a bit of Flexbox.
-The main objective is to build a reusable component to build Forms with different
-configurations and fields.
+<h1>Generic Dynamic Form Grid</h1>
 
-The current layout is based on an application i've been working on lately, but it can
-be changed since the main component lies within the Grid Container and its generic elements
+<h3 align="center">
+  <a href="readme-ptBR.md">PT-BR</a>
+</h3>
 
-These components were built with my initial studies of front-end, so any suggestions to 
-upgrade them are more than welcome.
+[![Latest Version](https://badgen.net/github/release/CaioVictorMota/generic-dynamic-form-grid/)](https://github.com/CaioVictorMota/generic-dynamic-form-grid/releases)
+[![License: MIT](https://badgen.now.sh/badge/license/MIT/green)](https://opensource.org/licenses/MIT)
 
-## dgrid-element and element position class
 
-The trick to make this Form work is to use the Generic Grid Element CSS Class (dgrid-element)
-and the Ghost Grid Placement CSS Classes, using the template found in the createElementPositionObject 
-function. It consists of a prefix followed by a row or column identifier and a optional span identifier.
-When the document is loaded, the JS component applies grid-column and grid-row to the grid-elements
-dynamically by parsing their classes names.
+<h2>A Simple CSS/JS Component to build Dynamic Grids</h2>
 
-Although it places CSS inline in the document, this approach allows a developer to focus only in which
-form elements will appear and the general layout of the form, without the need to fiddle with CSS.
-It also allows to the elements to be placed in any order in the HTML, but I discourage this since
-it can become harder to read through it.
+This component was built during my studies of FrontEnd Web Development.
+It's main objective is to be used as an easy and quick container in which dynamic grid cells can be placed simply by adding the correct classes to HTML elements.
+
+The motivation to build this component, beyond the experimentation involved in FrontEnd studies, was to standardize a type of form in my current work environment characterized by its different input fields and its general common structure.
+
+Beyond the main component, there is also the stylesheets "evo-standard-form" and "evo-standard-tablegrid" which roughly mimics my work environment, used to test and demonstrate how it works.
+
+Hopefully this will be a evolving component, maintaining the main objective. Any constructive suggestions, critiques, tips and lessons will be most welcome and appreciated.
+
+<h2>How to Use</h2>
+
+
+<h2>Credits</h2>
+
+This Project was built by [Caio "Tyghorn" Victor](https://github.com/CaioVictorMota) to humanity.
+
+We are all one.

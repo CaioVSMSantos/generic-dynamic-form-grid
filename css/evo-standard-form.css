@@ -43,6 +43,14 @@ in order to get a specific behavior */
     margin: 0 auto;
 }
 
+.standard-flex {
+    display: flex;
+}
+
+.standard-flex > * {
+    margin: 0 1%;
+}
+
 .width-150 {
     width: 150px;
 }
