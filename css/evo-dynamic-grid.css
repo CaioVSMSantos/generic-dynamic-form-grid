@@ -1,3 +1,4 @@
+/* More Information: https://github.com/CaioVictorMota/generic-dynamic-form-grid */
 /* Main Rule, the container for the Dynamic Grid */
 .evo-dynamic-grid {
     display: grid;
@@ -8,7 +9,7 @@
 }
 
 .evo-dynamic-grid > * {
-    margin: 1%;
+    margin: 0.3rem;
 }
 
 /* Support Rules - Can be applied to grid elements

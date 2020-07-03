@@ -1,3 +1,4 @@
+/* More Information: https://github.com/CaioVictorMota/generic-dynamic-form-grid */
 const DYNAMIC_GRID_CONSTANTS = {
     containerSelector: ".evo-dynamic-grid",
     dynamicStyleID: "evo-dynamic-grid-style",
@@ -121,8 +122,8 @@ function containsSpanClass(elementClass){
     return elementClass.includes(DYNAMIC_GRID_CONSTANTS.spanIdentifier);
 }
 
-window.onload = function(){
+window.addEventListener("load", function(event) {
     this.initializeDynamicGridConstants();
     this.initializeDynamicStyle();
     this.setDynamicElementsPosition();
-}
+});
