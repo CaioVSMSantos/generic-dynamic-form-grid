@@ -89,6 +89,6 @@ Hopefully this will be a evolving component, maintaining the main objective. Any
 
 <h2>Credits</h2>
 
-This Project was built by [Caio "Tyghorn" Victor](https://github.com/CaioVictorMota) to humanity.
+This Project was built by [Caio "Tyghorn" Victor](https://github.com/CaioVSMSantos) to humanity.
 
 We are all one.
