@@ -89,6 +89,6 @@ Espero que este seja um componente em evolução, mantendo o objetivo principal.
 
 <h2>Créditos</h2>
 
-Esse Projeto foi construído por [Caio "Tyghorn" Victor](https://github.com/CaioVictorMota) para a humanidade.
+Esse Projeto foi construído por [Caio "Tyghorn" Victor](https://github.com/CaioVSMSantos) para a humanidade.
 
 Nós somos todos um.
