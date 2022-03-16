@@ -1,3 +1,5 @@
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+
 <h1>Generic Dynamic Form Grid</h1>
 
 <h3 align="center">
@@ -5,9 +7,6 @@
     <span>|</span>
     <a href="README-ptBR.md">Português-BR</a>
 </h3>
-
-[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
-
 
 <h2>A Simple CSS/JS Component to build Dynamic Grids</h2>
 
