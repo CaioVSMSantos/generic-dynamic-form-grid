@@ -7,7 +7,7 @@
 </h3>
 
 [![Latest Version](https://badgen.net/github/releases/CaioVictorMota/generic-dynamic-form-grid/)](https://github.com/CaioVictorMota/generic-dynamic-form-grid/releases)
-[![License: MIT](https://badgen.now.sh/badge/license/MIT/green)](https://opensource.org/licenses/MIT)
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
 
 <h2>A Simple CSS/JS Component to build Dynamic Grids</h2>
@@ -87,8 +87,13 @@ Hopefully this will be a evolving component, maintaining the main objective. Any
 <label class="row-2 column-1 align-end" for="myElement2">Label</label>
 ```
 
-<h2>Credits</h2>
+<h2>Licence</h2>
 
-This Project was built by [Caio "Tyghorn" Victor](https://github.com/CaioVSMSantos) to humanity.
+This work is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
 
-We are all one.
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
