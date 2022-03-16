@@ -6,7 +6,6 @@
     <a href="README-ptBR.md">Português-BR</a>
 </h3>
 
-[![Latest Version](https://badgen.net/github/releases/CaioVictorMota/generic-dynamic-form-grid/)](https://github.com/CaioVictorMota/generic-dynamic-form-grid/releases)
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
 
