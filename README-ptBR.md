@@ -1,3 +1,5 @@
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+
 <h1>Generic Dynamic Form Grid</h1>
 
 <h3 align="center">
@@ -5,10 +7,6 @@
     <span>|</span>
     <a href="README-ptBR.md">Português-BR</a>
 </h3>
-
-[![Latest Version](https://badgen.net/github/releases/CaioVictorMota/generic-dynamic-form-grid/)](https://github.com/CaioVictorMota/generic-dynamic-form-grid/releases/tag/v1.0)
-[![License: MIT](https://badgen.now.sh/badge/license/MIT/green)](https://opensource.org/licenses/MIT)
-
 
 <h2>Um componente CSS / JS simples para criar Grids dinâmicoss</h2>
 
@@ -87,8 +85,13 @@ Espero que este seja um componente em evolução, mantendo o objetivo principal.
 <label class="row-2 column-1 align-end" for="myElement2">Label</label>
 ```
 
-<h2>Créditos</h2>
+<h2>Licença</h2>
 
-Esse Projeto foi construído por [Caio "Tyghorn" Victor](https://github.com/CaioVSMSantos) para a humanidade.
+Este trabalho está licenciado sob uma
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
 
-Nós somos todos um.
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
