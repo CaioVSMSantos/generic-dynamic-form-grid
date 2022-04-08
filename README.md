@@ -1,5 +1,3 @@
-[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
-
 <h1>Generic Dynamic Form Grid</h1>
 
 <h3 align="center">
@@ -84,14 +82,3 @@ Hopefully this will be a evolving component, maintaining the main objective. Any
 <!-- Specifies a Label Tag in the Second Row and First Column of the Grid Aligned in the end of the cell (Usually the bottom)-->
 <label class="row-2 column-1 align-end" for="myElement2">Label</label>
 ```
-
-<h2>Licence</h2>
-
-This work is licensed under a
-[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
-
-[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
-
-[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
-[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
-[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
